@@ -11,6 +11,7 @@ import TitleMessage from "./components/title-message/title-message.component";
 import About from "./pages/about/about.component";
 import Skills from "./pages/skills/skills.component";
 import Experience from "./pages/experience/experience.component";
+import ProjectTimeline from "./components/projects-timeline/projects-timeline.component";
 
 import "./App.css";
 
@@ -49,6 +50,16 @@ const App = () => {
             <hr />
             <Experience />
           </Fade>
+        </Container>
+      </div>
+
+      {/* Project timeline */}
+      <div>
+        <Container className="container-box rounded">
+          <Slide bottom duration={500}>
+            <hr />
+            <ProjectTimeline />
+          </Slide>
         </Container>
       </div>
     </div>
